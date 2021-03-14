@@ -1,5 +1,5 @@
 {% set name = "scikit-hep" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-hep-{{ version }}.tar.gz
-  sha256: 5381e9d5eac1f05a3c217214fd4c848d647d7a6862c82f49a156cbd0493b03af
+  sha256: bf8b049adb3bad922b2c5546cfacd1b0ba9bc470b55082668e561400b8576c27
 
 build:
   number: 0
@@ -22,12 +22,12 @@ requirements:
   run:
     - awkward ~=1.1.0
     - awkward0 ~=0.15
-    - boost-histogram ~=0.13.0
+    - boost-histogram ~=1.0.0
     - decaylanguage ~=0.10.0
     - hepstats ~=0.3.0
     - hepunits ~=2.1.0
-    - hist ~=2.1.0
-    - histoprint ~=1.6.0
+    - hist ~=2.2.0
+    - histoprint ~=2.0.0
     - iminuit ~=2.4.0
     - matplotlib-base >2.0.0
     - mplhep ~=0.2.0
@@ -56,3 +56,4 @@ about:
 extra:
   recipe-maintainers:
     - chrisburr
+    - henryiii
