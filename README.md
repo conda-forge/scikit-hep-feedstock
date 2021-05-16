@@ -36,6 +36,7 @@ Installing `scikit-hep` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `scikit-hep` can be installed with:
@@ -115,5 +116,6 @@ Feedstock Maintainers
 =====================
 
 * [@chrisburr](https://github.com/chrisburr/)
+* [@eduardo-rodrigues](https://github.com/eduardo-rodrigues/)
 * [@henryiii](https://github.com/henryiii/)
 
