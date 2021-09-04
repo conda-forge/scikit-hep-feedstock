@@ -34,7 +34,7 @@ requirements:
     - numpy >=1.13.1
     - particle ~=0.16.0
     - python >=3.7
-    - uproot ~=4.0.0
+    - uproot 4.0.*
     - uproot3 ~=3.14.0
     - uproot3-methods ~=0.10.0
     - vector ~=0.8.0
