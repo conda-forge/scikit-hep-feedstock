@@ -42,7 +42,6 @@ requirements:
 test:
   imports:
     - skhep
-    - skhep.dataset
   commands:
     - pip check
   requires:
