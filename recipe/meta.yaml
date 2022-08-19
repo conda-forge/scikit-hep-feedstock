@@ -1,5 +1,5 @@
 {% set name = "scikit-hep" %}
-{% set version = "3.6.0" %}
+{% set version = "4.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-hep-{{ version }}.tar.gz
-  sha256: 498f30f8c60406fa13662120365d6b7a18f99a04b67c919ea4bc92046bbb187a
+  sha256: 637dd175e12f2a7743a013b9a3a1c02ba95c4a3ebb7e8fdbdc1ef743e028ebdf
 
 build:
   number: 0
