@@ -34,7 +34,7 @@ requirements:
     - particle ~=0.20.0
     - python >=3.7
     - resample ~=1.5.0
-    - uproot ~=4.2.0
+    - uproot ~=4.3.0
     - vector ~=0.8.0
 
 test:
