@@ -1,5 +1,5 @@
 {% set name = "scikit-hep" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-hep-{{ version }}.tar.gz
-  sha256: 637dd175e12f2a7743a013b9a3a1c02ba95c4a3ebb7e8fdbdc1ef743e028ebdf
+  sha256: 35375c3c3c7582af58855b8a6fa090f2c7669350b3dbad2879cf006b2df409fe
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - mplhep ~=0.3.0
     - numpy >=1.13.1
     - particle ~=0.20.0
+    - pylhe ~=0.4.0
     - python >=3.7
     - resample ~=1.5.0
     - uproot ~=4.3.0
