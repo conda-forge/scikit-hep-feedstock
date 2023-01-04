@@ -1,5 +1,5 @@
 {% set name = "scikit-hep" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit-hep-{{ version }}.tar.gz
-  sha256: ce32f7f63c07348d33d3e9022dec64964d0291d4af709f01b7a3ce9cb81ca5ac
+  sha256: c7fd9989731ef4c624f1641c8dc1e0a76df8806cdde9d2097208186a78173c0a
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - hepunits ~=2.3.0
     - hist ~=2.6.0
     - histoprint ~=2.4.0
-    - iminuit ~=2.17.0
+    - iminuit ~=2.18.0
     - matplotlib-base >2.0.0
     - mplhep ~=0.3.0
     - numpy >=1.13.1
@@ -36,7 +36,7 @@ requirements:
     - python >=3.7
     - resample ~=1.5.0
     - uproot ~=4.3.0
-    - vector ~=0.10.0
+    - vector ~=0.11.0
 
 test:
   imports:
