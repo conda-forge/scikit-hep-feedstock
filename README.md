@@ -1,11 +1,11 @@
-About scikit-hep
-================
+About scikit-hep-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-hep-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scikit-hep/scikit-hep/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-hep-feedstock/blob/main/LICENSE.txt)
 
 Summary: Metapackage of Scikit-HEP project tools for Particle Physics.
 
