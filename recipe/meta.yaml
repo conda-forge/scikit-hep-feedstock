@@ -27,7 +27,7 @@ requirements:
     - hepunits ~=2.3.0
     - hist ~=2.6.0
     - histoprint ~=2.4.0
-    - iminuit ~=2.21.0
+    - iminuit ~=2.22.0
     - matplotlib-base >3.4.0
     - mplhep ~=0.3.0
     - numpy >=1.13.1
@@ -36,7 +36,7 @@ requirements:
     - python >=3.8
     - resample ~=1.6.0
     - uproot ~=5.0.0
-    - vector ~=1.0.0
+    - vector ~=1.1.0
 
 test:
   imports:
