@@ -20,8 +20,8 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - awkward ~=2.4.0
-    - decaylanguage ~=0.16.0
+    - awkward ~=2.5.0
+    - decaylanguage ~=0.18.0
     - hepstats ~=0.7.0
     - hepunits ~=2.3.0
     - hist ~=2.7.0
@@ -34,7 +34,7 @@ requirements:
     - pylhe ~=0.7.0
     - python >=3.8
     - resample ~=1.6.0
-    - uproot ~=5.0.0
+    - uproot ~=5.2.0
     - vector ~=1.1.0
 
 test:
