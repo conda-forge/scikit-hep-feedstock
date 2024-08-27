@@ -146,4 +146,5 @@ Feedstock Maintainers
 * [@chrisburr](https://github.com/chrisburr/)
 * [@eduardo-rodrigues](https://github.com/eduardo-rodrigues/)
 * [@henryiii](https://github.com/henryiii/)
+* [@matthewfeickert](https://github.com/matthewfeickert/)
 
