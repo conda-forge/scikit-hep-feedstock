@@ -11,7 +11,7 @@ source:
   sha256: 157307b4f5c133c3c7c096df949d4add1f4bbe2598df95cf4e39ded93ee58a66
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools >=42.0
   run:
     - awkward ~=2.6.0
     - decaylanguage ~=0.18.0
