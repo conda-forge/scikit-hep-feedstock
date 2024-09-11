@@ -1,5 +1,5 @@
 {% set name = "scikit-hep" %}
-{% set version = "2024.8.1" %}
+{% set version = "2024.9.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 157307b4f5c133c3c7c096df949d4add1f4bbe2598df95cf4e39ded93ee58a66
+  sha256: d89e0de198c8dbabfdae97938a9a0398dd22a7b0749743b92c155914dd382c2d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
