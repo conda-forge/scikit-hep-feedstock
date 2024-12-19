@@ -1,5 +1,6 @@
 {% set name = "scikit-hep" %}
 {% set version = "2024.10.1" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +11,7 @@ source:
   sha256: 22ea15b6284413222559351b0b62b4ce9d542aabdc0916fab9f73c8c50a32738
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -51,6 +52,7 @@ about:
   summary: Metapackage of Scikit-HEP project tools for Particle Physics.
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/scikit-hep/scikit-hep/
 
 extra:
   recipe-maintainers:
