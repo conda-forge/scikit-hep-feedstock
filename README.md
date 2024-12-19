@@ -9,6 +9,8 @@ Package license: BSD-3-Clause
 
 Summary: Metapackage of Scikit-HEP project tools for Particle Physics.
 
+Development: https://github.com/scikit-hep/scikit-hep/
+
 Current build status
 ====================
 
