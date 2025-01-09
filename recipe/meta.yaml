@@ -21,12 +21,12 @@ requirements:
     - python {{ python_min }}
     - setuptools >=62.6
   run:
-    - awkward ~=2.6.0
+    - awkward ~=2.7.0
     - decaylanguage ~=0.18.0
     - hepstats ~=0.9.0
     - hepunits ~=2.3.0
     - hist ~=2.8.0
-    - histoprint ~=2.5.0
+    - histoprint ~=2.6.0
     - iminuit ~=2.30.0
     - matplotlib-base >3.4.0
     - mplhep ~=0.3.0
@@ -35,7 +35,7 @@ requirements:
     - pylhe ~=0.9.0
     - python >={{ python_min }}
     - resample ~=1.10.0
-    - uproot ~=5.4.0
+    - uproot ~=5.5.0
     - vector ~=1.5.0
 
 test:
