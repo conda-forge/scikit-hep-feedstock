@@ -1,24 +1,27 @@
-{% set name = "scikit-hep" %}
-{% set version = "2025.1.1" %}
-{% set python_min = "3.9" %}
+schema_version: 1
+
+context:
+  name: scikit-hep
+  version: 2025.1.1
+  python_min: 3.9
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
   sha256: 7da189fabcbf657f7b273f8e15401f741b78f7e173c1c790c45704922ea27079
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools >=62.6
   run:
     - awkward ~=2.7.0
@@ -33,26 +36,24 @@ requirements:
     - numpy >=1.13.1
     - particle ~=0.25.0
     - pylhe ~=0.9.0
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - resample ~=1.10.0
     - uproot ~=5.5.0
     - vector ~=1.5.0
 
-test:
-  imports:
-    - skhep
-  commands:
-    - pip check
-  requires:
-    - python {{ python_min }}
-    - pip
+tests:
+  - python:
+      imports:
+        - skhep
+      pip_check: true
 
+      python_version: ${{ python_min }}.*
 about:
-  home: https://github.com/scikit-hep/scikit-hep/
   summary: Metapackage of Scikit-HEP project tools for Particle Physics.
   license: BSD-3-Clause
   license_file: LICENSE
-  dev_url: https://github.com/scikit-hep/scikit-hep/
+  homepage: https://github.com/scikit-hep/scikit-hep/
+  repository: https://github.com/scikit-hep/scikit-hep/
 
 extra:
   recipe-maintainers:
