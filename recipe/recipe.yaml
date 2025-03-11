@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - python 3.9.*
+    - python ${{ python_min }}.*
     - setuptools >=62.6
   run:
     - awkward ~=2.7.0
