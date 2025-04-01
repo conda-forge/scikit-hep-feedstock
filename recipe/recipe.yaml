@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: scikit-hep
-  version: 2025.1.1
-  python_min: 3.9
+  version: "2025.4.1"
+  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 7da189fabcbf657f7b273f8e15401f741b78f7e173c1c790c45704922ea27079
+  sha256: 51e75d086ca23e286605d17fb80fb4f020243d1026d362fbcb8166a1fbef1ddf
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
