@@ -24,7 +24,7 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=62.6
   run:
-    - awkward ~=2.7.0
+    - awkward ~=2.8.0
     - decaylanguage ~=0.18.0
     - hepstats ~=0.9.0
     - hepunits ~=2.3.0
@@ -38,16 +38,16 @@ requirements:
     - pylhe ~=0.9.0
     - python >=${{ python_min }}
     - resample ~=1.10.0
-    - uproot ~=5.5.0
-    - vector ~=1.5.0
+    - uproot ~=5.6.0
+    - vector ~=1.6.0
 
 tests:
   - python:
       imports:
         - skhep
       pip_check: true
-
       python_version: ${{ python_min }}.*
+
 about:
   summary: Metapackage of Scikit-HEP project tools for Particle Physics.
   license: BSD-3-Clause
