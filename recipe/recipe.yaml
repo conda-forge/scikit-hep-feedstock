@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: scikit-hep
-  version: "2025.4.1"
+  version: "2025.7.1"
   python_min: '3.9'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 51e75d086ca23e286605d17fb80fb4f020243d1026d362fbcb8166a1fbef1ddf
+  sha256: 73c4567c3b65be4bb010ccf174c596fed2d81b1b6c187c7a1b50475298f69619
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - hepunits ~=2.3.0
     - hist ~=2.8.0
     - histoprint ~=2.6.0
-    - iminuit ~=2.30.0
+    - iminuit ~=2.31.0
     - matplotlib-base >3.4.0
     - mplhep ~=0.3.0
     - numpy >=1.13.1
