@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: scikit-hep
-  version: "2025.9.1"
+  version: "2025.11.1"
   python_min: '3.9'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4188fdf797ec3de1e7bc4b1953416f8acbe8cb822f7b9646e6e65371d0af555b
+  sha256: a990cc1c7d2dc3b1b4739925c696d985a8a8c2bff47e89f2223078fc1eb581ec
 
 build:
   number: 0
@@ -27,19 +27,19 @@ requirements:
     - awkward ~=2.8.0
     - decaylanguage ~=0.20.0
     - hepstats ~=0.9.0
-    - hepunits ~=2.3.0
+    - hepunits ~=2.4.0
     - hist ~=2.9.0
     - histoprint ~=2.6.0
     - iminuit ~=2.31.0
     - matplotlib-base >3.4.0
     - mplhep ~=0.4.0
     - numpy >=1.13.1
-    - particle ~=0.25.0
-    - pylhe ~=0.9.0
+    - particle ~=0.26.0
+    - pylhe ~=1.0.0
     - python >=${{ python_min }}
     - resample ~=1.10.0
     - uproot ~=5.6.0
-    - vector ~=1.6.0
+    - vector ~=1.7.0
 
 tests:
   - python:
