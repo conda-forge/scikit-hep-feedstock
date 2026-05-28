@@ -1,22 +1,21 @@
 schema_version: 1
 
 context:
-  name: scikit-hep
-  version: "2026.2.1"
+  version: "2026.5.1"
   python_min: '3.10'
 
 package:
-  name: ${{ name|lower }}
+  name: scikit-hep
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: b665874d06a8abdca2e2a21c6ba9574b334fb34b679b1a2de0eda807c3a0784b
+  url: https://pypi.org/packages/source/s/scikit-hep/scikit_hep-${{ version }}.tar.gz
+  sha256: 52157322e284e7b09a98e7e33146eb865fa78334e611cd23802938875903d68a
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -24,6 +23,7 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=62.6
   run:
+    - python >=${{ python_min }}
     - awkward ~=2.9.0
     - decaylanguage ~=0.20.0
     - hepstats ~=0.9.0
@@ -32,11 +32,10 @@ requirements:
     - histoprint ~=2.6.0
     - iminuit ~=2.32.0
     - matplotlib-base >3.4.0
-    - mplhep ~=1.0.0
+    - mplhep ~=1.1.0
     - numpy >=1.13.1
     - particle ~=0.26.0
     - pylhe ~=1.0.0
-    - python >=${{ python_min }}
     - resample ~=1.10.0
     - uproot ~=5.7.0
     - vector ~=1.8.0
@@ -46,7 +45,9 @@ tests:
       imports:
         - skhep
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Metapackage of Scikit-HEP project tools for Particle Physics.
