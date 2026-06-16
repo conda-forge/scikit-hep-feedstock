@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.5.1"
+  version: "2026.6.1"
   python_min: '3.10'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/scikit-hep/scikit_hep-${{ version }}.tar.gz
-  sha256: 52157322e284e7b09a98e7e33146eb865fa78334e611cd23802938875903d68a
+  sha256: ea3f81f7b4995f705e31d5a8d0b6ed8a01457ffb2612aa6f06ad87a3ce5510da
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - histoprint ~=2.6.0
     - iminuit ~=2.32.0
     - matplotlib-base >3.4.0
-    - mplhep ~=1.1.0
+    - mplhep ~=1.2.0
     - numpy >=1.13.1
     - particle ~=0.26.0
     - pylhe ~=1.0.0
