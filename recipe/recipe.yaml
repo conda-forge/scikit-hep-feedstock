@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.7.1"
+  version: "2026.8.1"
   python_min: '3.10'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/scikit-hep/scikit_hep-${{ version }}.tar.gz
-  sha256: a269116e5ddb0c70835653b002434758960b19ae1cbbe6b58343b04754588c2d
+  sha256: b96909b2139bb23889c36477f4887307bec27dca20e986f4ab57c6275f78704c
 
 build:
   number: 0
