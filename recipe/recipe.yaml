@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.8.1"
+  version: "2026.9.1"
   python_min: '3.10'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/scikit-hep/scikit_hep-${{ version }}.tar.gz
-  sha256: b96909b2139bb23889c36477f4887307bec27dca20e986f4ab57c6275f78704c
+  sha256: 10c3511ae1ed8fde505e76d843266b4ef1a1dfb64e829ba8f95a20c9bcba21ad
 
 build:
   number: 0
@@ -24,12 +24,12 @@ requirements:
     - setuptools >=62.6
   run:
     - python >=${{ python_min }}
-    - awkward ~=2.12.0
+    - awkward ~=2.13.0
     - decaylanguage ~=1.1.0
     - hepstats ~=0.10.0
     - hepunits ~=2.4.0
-    - hist ~=2.10.0
-    - histoprint ~=2.6.0
+    - hist ~=2.11.0
+    - histoprint ~=2.7.0
     - iminuit ~=2.32.0
     - matplotlib-base >3.4.0
     - mplhep ~=1.2.0
